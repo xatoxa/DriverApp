@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">DriverApp</string>
+    <string name="greetings">Добро пожаловать, Водитель!</string>
+    <string name="sign_in_bottom">Войдите в свою учётную запись</string>
+    <string name="sign_in_name">Введите персональный id водителя</string>
+    <string name="sign_in_name_hgh">Ваш id</string>
+    <string name="sign_in_pwd">Введите пароль</string>
+    <string name="sign_in_pwd_hgh">Пароль</string>
+    <string name="sign_in_btn">Войти</string>
+    <string name="delay">Текущее опоздание:</string>
+    <string name="startDelay">0</string>
+    <string name="minute">мин.</string>
+    <string name="textStops">Следующая остановка:</string>
+    <string name="helloName">Здравствуйте, </string>
+    <string name="trips">Ваши рейсы на сегодня:</string>
+    <string name="Done">Продолжить</string>
+    <string name="uploadDB">Загрузить</string>
+    <string name="updateDB">Обновить</string>
+    <string name="msg">Сообщение диспетчеру</string>
+</resources>

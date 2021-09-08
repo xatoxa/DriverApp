@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/MainActivity"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:layout_marginHorizontal="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="27sp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:text="@string/greetings" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sign_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textSize="12sp"
+        android:layout_marginBottom="25dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:text="@string/sign_in_bottom" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:weightSum="3"
+        android:layout_above="@id/sign_bottom"
+        android:gravity="center"
+        android:layout_marginBottom="50dp"
+        android:layout_marginHorizontal="20dp">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/eTextID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="@string/sign_in_name"
+            android:text=""
+            android:layout_marginBottom="10dp"
+
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="@string/sign_in_name_hgh" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/eTextPwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/sign_in_pwd"
+            android:inputType="textPassword"
+            android:text=""
+            android:layout_marginBottom="10dp"
+
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="@string/sign_in_pwd_hgh" />
+
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_sign_in"
+            android:text="@string/sign_in_btn" />
+    </LinearLayout>
+
+</RelativeLayout>
